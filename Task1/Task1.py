@@ -2,8 +2,9 @@
 
 phrase = ""
 newPhrase = ""
+path = 'C:\\Users\\YuzhakovMikhail\\Desktop\\GeekBrains\\Программист\\I_четверть_2022_год\\Python\\PythonHW_5\\Task1\\Task1.txt'
 
-with open('D:\Code\PythonHW_5\Task1\Task1.txt', mode='r', encoding='utf-8') as f:
+with open(path, mode='r', encoding='utf-8') as f:
     phrase = f.read()
 print(phrase)
 phrase = phrase.split()
