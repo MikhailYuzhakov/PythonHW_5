@@ -1,6 +1,10 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 
-usrString = "aahhhhdddduuuasfhjnnnn"
+path = "C:\\Users\\YuzhakovMikhail\\Desktop\\GeekBrains\\Программист\\I_четверть_2022_год\\Python\\PythonHW_5\\Task4\\Task4.txt"
+
+with open(path, mode='r', encoding='utf-8') as file:
+    usrString = file.read()
+print("Исходная строка", usrString)
 
 def RLEcompression(usrStr): # функция для сжатия данных алгоритмом RLE
     lastChar = usrStr[0]
